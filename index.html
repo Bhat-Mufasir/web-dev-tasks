@@ -1,311 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web - Developer Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: rgb(131, 179, 230);
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 80px;
-            background-color: rgb(140, 194, 239);
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-
-        }
-
-        nav ul li {
-            list-style: none;
-            margin: 0 23px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-        }
-
-        nav ul li a:hover {
-            color: rgb(101, 101, 236);
-            font-size: 1.05rem;
-        }
-
-        .left {
-            font-size: 2rem;
-        }
-
-        .firstsection {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 80px 0;
-        }
-
-        .firstsection>div {
-            width: 30%;
-        }
-
-        .leftsection {
-            font-size: 3rem;
-        }
-
-        .rightsection img {
-            width: 80%;
-        }
-
-        .purple {
-            color: blueviolet;
-        }
-
-        .text-gray {
-            color: gray;
-        }
-
-        #element {
-            color: rgb(101, 101, 236);
-        }
-
-        .secondsection {
-            max-width: 80vw;
-            margin: auto;
-            height: 80vh;
-        }
-
-        .secondsection h1 {
-            font-size: 2rem;
-        }
-
-        .secondsection .box {
-            background-color: white;
-            width: 76vw;
-            height: 2px;
-            margin: 56px 0;
-            display: flex;
-        }
-
-        .secondsection .vertical {
-            background-color: white;
-            width: 2px;
-            height: 94px;
-            margin: 0 120px;
-        }
-
-        main hr {
-            border: 0;
-            background-color: rgb(36, 36, 57);
-            margin: 40px 84px;
-            height: 1.2px;
-        }
-
-        .image-top {
-            width: 100px;
-            position: relative;
-            top: -29px;
-            left: -50px;
-        }
-
-        .vertical-title {
-            position: relative;
-            top: 58px;
-            width: 200px;
-        }
-
-        .vertical-desc {
-            position: relative;
-            top: 65px;
-            width: 150px;
-            color: rgb(0, 11, 9);
-            font-size: 12px;
-
-        }
-
-        footer {
-            background-color:whitesmoke;
-
-
-        }
-
-        footer div {
-            display: flex;
-            padding: 23px 123px;
-            justify-content: space-evenly;
-            color: black;
-        }
-
-        footer h4 {
-            display: flex;
-            justify-content: space-evenly;
-            color: black;
-            padding: 20px 0;
-            text-align: center;
-            font-size: 1.5rem;
-        }
-
-        footer div img {
-            display: flex;
-            padding: 23px 123px;
-            justify-content: space-evenly;
-        }
-
-        footer div div {
-            display: flex;
-            justify-content: space-evenly;
-            color: black;
-            padding: 20px 0;
-            text-align: center;
-            font-size: 1.5rem;
-        }
-
-        footer div {
-            display: flex;
-            justify-content: space-evenly;
-            color: black;
-            padding: 20px 0;
-            text-align: center;
-            font-size: 1.5rem;
-        }
-    </style>
+    <title>Temperature Convertor</title>
+    <link rel="stylesheet" href="style.css">  
+    
 </head>
-
 <body>
-    <header>
-        <nav>
-            <dev class="left">Mufasir's Portfolio</dev>
-            <dev class="right">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Services</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact me</a></li>
-                </ul>
-            </dev>
-        </nav>
-    </header>
-    <main>
-        <section class="firstsection">
-            <div class="leftsection">
-                Hi, My name is <span class="purple">Bhat Mufasir</span>
-                <div>I am a Passionate</div>
-                <span id="element"></span>
-            </div>
-            <div class="rightsection">
-                <img src="pro.png" alt="">
-            </div>
-        </section>
-        <hr>
-        <section class="secondsection">
-            <span class="text-gray">What I have done so far</span>
-            <h1>Work Experience</h1>
-            <div class="box">
-                <div class="vertical"><img class="image-top" src="don.jpg" alt="">
-                    <div class="vertical-title">HTML Developer</div>
-                    <div class="vertical-desc">
-                        HTML developers are responsible for creating websites from the ground up, including adding
-                        content, developing the layout, and ensuring the website runs properly.
-                    </div>
-                </div>
-                <div class="vertical"><img class="image-top" src="don.jpg" alt="">
-                    <div class="vertical-title">CSS Developer</div>
-                    <div class="vertical-desc">
-                        CSS developers are web professionals whose primary responsibility is to deliver a polished and
-                        styled product to the visitor's browser. Practically every website uses CSS, but CSS is often
-                        not considered an “equal” in the modern web development stack.
-                    </div>
-                </div>
-                <div class="vertical"><img class="image-top" src="don.jpg" alt="">
-                    <div class="vertical-title">Java Script Developer</div>
-                    <div class="vertical-desc">
-                        A JavaScript developer is responsible for implementing the front-end logic that defines the
-                        behavior of the visual elements of a web application. A JavaScript developer is also responsible
-                        for connecting this with the services that reside on the back-end.
-                    </div>
-                </div>
-                <div class="vertical"><img class="image-top" src="don.jpg" alt="">
-                    <div class="vertical-title">C++ Developer</div>
-                    <div class="vertical-desc">
-                        A C++ developer is a software developer who specializes in the coding language of C++. The work
-                        primarily takes place in a quiet office setting in front of a computer.
-                    </div>
-                </div>
+   
 
-            </div>
-        </section>
-    </main>
-    <footer class="About">
-        <h4>About Me</h4>
-        <div class="box">
-            <div>
-                Hello there! Myself BHAT MUFASIR, a passionate web developer intern from Srinagar ( J and K ). With a
-                background in Engineering, I specialize in Web development and designing. My journey in the world of
-                technology has equipped me with skills in web development ang problem solving techniques.
-                Looking forward to connecting with you.
-            </div>
-        </div>
-    </footer>
-    <footer class="Projects">
-        <h4>Projects</h4>
-        <div class="box">
-            <div>
-                <img src="tick.png" alt="">
-                Tic Tac Toe, the classic game of Xs and Os, has found a new home on the web, bringing nostalgic fun to
-                users worldwide. Online platforms offer sleek interfaces, multiplayer options, and challenging AI
-                opponents. Playable on browsers, smartphones, and tablets, the web-based Tic Tac Toe experience combines
-                simplicity with modern accessibility, making it a delightful pastime for users of all ages.In the realm
-                of online Tic Tac Toe, enthusiasts can enjoy diverse variations, from traditional 3x3 grids to larger
-                boards, adding strategic depth. Engaging graphics and user-friendly interfaces enhance the experience,
-                while features like real-time multiplayer and global leaderboards foster competitive excitement. With
-                the convenience of web accessibility, players can indulge in quick matches during breaks or engage in
-                extended battles, creating a dynamic and entertaining space for fans of this timeless game.
-            </div>
+<div class="container">
 
+        <div class="title">
+            <h1>Temperature Converter</h1>
+            <span class="Temperature-icon"><i class="fa-solid fa-temperature-three-quarters"></i></span>
         </div>
-        <div>
-            <img src="images.png" alt="">
-            Crafting a compelling portfolio website is crucial for professionals showcasing their talents. The website
-            serves as a digital resume, providing an immersive glimpse into one's skills, projects, and achievements.
-            Clean design, intuitive navigation, and a responsive layout ensure a seamless user experience. Featuring a
-            diverse range of work samples, testimonials, and a concise bio, the portfolio website becomes a powerful
-            tool for self-promotion. Integrating multimedia elements and emphasizing a personal brand, this digital
-            showcase helps individuals leave a lasting impression on potential clients, collaborators, or employers.
+
+        <div id="celsius">
+            <input type="number" name="" placeholder="Celsius">
+            <span class="icon">&#8451</span>
         </div>
-    </footer>
-    <footer class="Contact Me">
-        <h4>Contact me</h4>
-        <div class="box">
-            <div>
-               <ul>
-                <li>Mobile no. :- (+91) 9103045448</li>
-                <li>EMAIL :- bhatmufasirnazir@gmail.com</li>
-                <li>linkedIn :- Bhat Mufasir</li>
-               </ul>
-            </div>
+        <div id="fahrenheit">
+            <input type="number" name="" placeholder="Fahrenheit">
+            <span class="icon">&#8457</span>
         </div>
-    </footer>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <!-- Setup and start animation! -->
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Web Developer.', 'Web Designer.',],
-            typeSpeed: 50,
-        });
-    </script>
+        <div id="kelvin">
+            <input type="number" name="" placeholder="Kelvin">
+            <span class="icon">&#8490</span>
+        </div>
+
+        <div class="button">
+            <button>All Clear</button>
+        </div>
+
+    </div>
+    <script src="work.js"></script>
+    
 </body>
-
 </html>
